@@ -80,7 +80,7 @@ http.createServer(function(req,res){
     }
     else if(pathName=="/getChapter"){
         //详情页
-        console.log(queryString.parse(urlObj.query))
+        console.log(queryString.parse(urlObj.query));
         var chapterId = queryString.parse(urlObj.query).chapterId;
         var detail = [];
         chapterList.forEach((data, index) => {
